@@ -1,9 +1,9 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
-}
+} */
 
 /* #2196F3 */
 /* #212121 */
@@ -12,7 +12,7 @@
 /* #FFFFFF */
 
 /* Глобальные значения */
-body {
+/* body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
@@ -22,10 +22,10 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 /* Шапка */
-.header {
+/* .header {
   padding: 25px 0;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
@@ -42,30 +42,30 @@ body {
 
 .header__menu {
   display: flex;
-}
-.header__menu-item,
+} */
+/* .header__menu-item,
 .header__socials-item {
   margin: 0 50px 0 0;
-}
+} */
 /* это должен быть ласт чайлд */
 .no-margin {
   margin: 0;
 }
 
-.logo {
+/* .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
-}
+} */
 
-.header__logo {
+/* .header__logo {
   margin-right: 93px;
-}
-.logo__black {
+} */
+/* .logo__black {
   color: #000000;
-}
-.header__menu .link {
+} */
+/* .header__menu-link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -74,23 +74,19 @@ body {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__menu .link:hover,
-.header__menu .link:focus {
+.header__menu-link:hover,
+.header__menu-link:focus {
   color: var(--accent-color);
-}
-.header__menu .link.current {
+} */
+/* .header__menu-link.current {
   color: var(--accent-color);
-}
-.header__menu,
-.header__socials {
-  list-style: none;
-}
+} */
 
-.header__menu-item {
+/* .header__menu-item {
   position: relative;
-}
+} */
 
-.current::after {
+/* .current::after {
   content: '';
   position: absolute;
   bottom: -33px;
@@ -100,9 +96,9 @@ body {
   width: 100%;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
-.header__socials-link {
+/* .header__socials-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -115,11 +111,11 @@ body {
 .header__socials-link:hover,
 .header__socials-link:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ___SVG___ */
 
-.header__socials-icon {
+/* .header__socials-icon {
   max-height: 16px;
   max-width: 20px;
   margin-right: 10px;
@@ -131,7 +127,7 @@ body {
 .header__socials-link:hover .header__socials-icon,
 .header__socials-link:focus .header__socials-icon {
   fill: var(--accent-color);
-}
+} */
 
 /* Подвал */
 
