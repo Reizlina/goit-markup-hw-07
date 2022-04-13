@@ -1,0 +1,28 @@
+.custumers {
+  display: flex;
+  justify-content: space-between;
+
+  .custumers__item {
+    display: flex;
+  }
+
+  .custumers__icon {
+    display: inline-block;
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .custumers__item:hover .custumers__icon {
+    border-color: $accent-color;
+  }
+
+  .custumers__icon:hover {
+    fill: $accent-color;
+  }
+}

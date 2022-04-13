@@ -1,0 +1,57 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
+
+  max-width: 528px;
+
+  background-color: $primary-bg-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__close-cross {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  &__close-cross::before,
+  &__close-cross::after {
+    content: '';
+    position: absolute;
+
+    width: 15px;
+    height: 2px;
+    background-color: black;
+
+    top: 50%;
+    left: 50%;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__close-cross::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &__close-cross::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &__close-cross:hover::before,
+  &__close-cross:hover::after {
+    background-color: $accent-color;
+  }
+}

@@ -118,35 +118,35 @@
           <!-- Чем мы занимаемся -->
 
           <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="busines__list">
-            <li class="busines__item">
+          <ul class="features__busines-list">
+            <li class="features__busines-item">
               <img
                 src="./images/box1.jpg"
                 alt="Человек набирает на клавиатуре код для веб странички"
                 width="370"
                 height="294"
               />
-              <!-- busines__text ДИВ УДАЛЯЕМ -->
+              <!-- features__busines-text ДИВ УДАЛЯЕМ -->
 
-              <p class="busines__text">Десктопные приложения</p>
+              <p class="features__busines-text">Десктопные приложения</p>
             </li>
-            <li class="busines__item">
+            <li class="features__busines-item">
               <img
                 src="./images/box2.jpg"
                 alt="Человек адаптирует веб страничку для телефона"
                 width="370"
                 height="294"
               />
-              <p class="busines__text">Мобильные приложения</p>
+              <p class="features__busines-text">Мобильные приложения</p>
             </li>
-            <li class="busines__item">
+            <li class="features__busines-item">
               <img
                 src="./images/box3.jpg"
                 alt="Человек с планшетом выбирает на нём цвет на плитре"
                 width="370"
                 height="294"
               />
-              <p class="busines__text">Дизайнерские решения</p>
+              <p class="features__busines-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -154,7 +154,7 @@
 
       <!-- Наша команда -->
 
-      <section class="team__section section">
+      <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
 
@@ -166,10 +166,10 @@
                 width="270"
                 height="260"
               />
-              <div class="description">
-                <h3 class="description__names">Игорь Демьяненко</h3>
+              <div class="team__description">
+                <h3 class="team__description-names">Игорь Демьяненко</h3>
 
-                <p class="description__position">Product Designer</p>
+                <p class="team__description-position">Product Designer</p>
 
                 <ul class="socials">
                   <li class="socials__item">
@@ -205,9 +205,9 @@
             </li>
             <li class="team__item">
               <img src="./images/img-2.jpg" alt="Портрет Ольги Репиной" width="270" height="260" />
-              <div class="description">
-                <h3 class="description__names">Ольга Репина</h3>
-                <p class="description__position">Frontend Developer</p>
+              <div class="team__description">
+                <h3 class="team__description-names">Ольга Репина</h3>
+                <p class="team__description-position">Frontend Developer</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a class="socials__link" href="#">
@@ -247,9 +247,9 @@
                 width="270"
                 height="260"
               />
-              <div class="description">
-                <h3 class="description__names">Николай Тарасов</h3>
-                <p class="description__position">Marketing</p>
+              <div class="team__description">
+                <h3 class="team__description-names">Николай Тарасов</h3>
+                <p class="team__description-position">Marketing</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a class="socials__link" href="#">
@@ -289,9 +289,9 @@
                 width="270"
                 height="260"
               />
-              <div class="description">
-                <h3 class="description__names">Михаил Ермаков</h3>
-                <p class="description__position">UI Designer</p>
+              <div class="team__description">
+                <h3 class="team__description-names">Михаил Ермаков</h3>
+                <p class="team__description-position">UI Designer</p>
                 <ul class="socials">
                   <li class="socials__item">
                     <a class="socials__link" href="#">
@@ -373,18 +373,20 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__address">
+        <div class="footer__address-wrap">
           <a href="./index.html" class="logo footer__logo">
             Web<span class="logo__white">Studio</span></a
           >
-          <address class="address">
-            <a href="https://goo.gl/maps/qVXAVopkia2wuuTD7" class="address__link"
+          <address class="footer__address">
+            <a href="https://goo.gl/maps/qVXAVopkia2wuuTD7" class="footer__address-link"
               >г. Киев, пр-т Леси Украинки, 26
             </a>
-            <a href="mailto:info@devstudio.com" class="address__link address__link__c-gray"
+            <a
+              href="mailto:info@devstudio.com"
+              class="footer__address-link footer__address-link_c-gray"
               >info@devstudio.com</a
             >
-            <a href="tel:+38-096-111-11-11" class="address__link address__link__c-gray"
+            <a href="tel:+38-096-111-11-11" class="footer__address-link footer__address-link_c-gray"
               >+38 096 111 11 11</a
             >
           </address>
@@ -395,28 +397,28 @@
           <ul class="socials">
             <li class="socials__item socials__item_bgc-gray">
               <a class="socials__link" href="#">
-                <svg class="socials__icon__c-white">
+                <svg class="socials__icon_c-white">
                   <use href="images/svg/socials.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item socials__item_bgc-gray">
               <a class="socials__link" href="#">
-                <svg class="socials__icon__c-white">
+                <svg class="socials__icon_c-white">
                   <use href="images/svg/socials.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item socials__item_bgc-gray">
               <a class="socials__link" href="#">
-                <svg class="socials__icon__c-white">
+                <svg class="socials__icon_c-white">
                   <use href="images/svg/socials.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item socials__item_bgc-gray">
               <a class="socials__link" href="#">
-                <svg class="socials__icon__c-white">
+                <svg class="socials__icon_c-white">
                   <use href="images/svg/socials.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -426,21 +428,21 @@
         <div class="footer__form">
           <p class="footer__title">Подпишитесь на рассылку</p>
 
-          <div class="subscribe">
-            <form class="subscribe__form" action="">
-              <label class="subscribe__label" for="email"></label>
+          <div class="footer__subscribe">
+            <form class="footer__subscribe-form" action="">
+              <label class="footer__subscribe-label" for="email"></label>
 
               <input
-                class="subscribe__input"
+                class="footer__subscribe-input"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
               />
             </form>
-            <button class="btn subscribe__btn" type="submit">
+            <button class="btn footer__subscribe-btn" type="submit">
               Подписаться
-              <svg class="btn__icon">
+              <svg class="footer__btn-icon">
                 <use href="./images/svg/socials.svg#icon-send"></use>
               </svg>
             </button>

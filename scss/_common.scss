@@ -1,20 +1,29 @@
 body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
     helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.section {
+  padding: 94px 0;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .section__title {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
+}
+
+.hidden {
+  display: none;
 }

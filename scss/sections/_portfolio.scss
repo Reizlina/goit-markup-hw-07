@@ -1,0 +1,72 @@
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-top: 30px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__cards {
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    padding: 24px;
+  }
+  &__title {
+    color: $title-text-color;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+
+  &__attribute {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  &__hover-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__hover {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:hover &__hover {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: 0.03em;
+    color: $primary-bg-color;
+
+    padding: 0 24px;
+  }
+}

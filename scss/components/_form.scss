@@ -1,0 +1,175 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  & > &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    font-family: 'Roboto' sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+  }
+
+  &__input {
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__textarea {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: $title-text-color;
+    margin-bottom: 32px;
+
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__textarea:focus-within {
+    border: 1px solid accent-color;
+  }
+
+  &__input:focus-visible,
+  &__textarea:focus-visible {
+    outline: none;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+  &__input:focus-within {
+    border: 1px solid accent-color;
+  }
+  &__box:focus-within > &__wrap {
+    fill: accent-color;
+  }
+  &__title {
+    margin-bottom: 12px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    border: none;
+    font: inherit;
+    max-width: 200px;
+    padding: 10px 55px;
+
+    font-family: Roboto;
+    color: $primary-bg-color;
+    background-color: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: #188ce8;
+  }
+  &__checkbox {
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    padding-left: 30px;
+    margin-bottom: 30px;
+
+    color: $primary-text-color;
+  }
+
+  &__link {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+
+  &__checkbox-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+  &__checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 3px;
+  }
+
+  &__checkmark-icon {
+    position: absolute;
+    width: 11px;
+    height: 8px;
+    top: 2px;
+    left: 1px;
+    fill: transparent;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox-input:checked ~ &__checkmark {
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+  }
+
+  &__checkbox-input:checked ~ &__checkmark > &__checkmark-icon {
+    fill: rgb(255, 255, 255);
+  }
+}
