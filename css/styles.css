@@ -784,7 +784,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.form-link {
+.form__link {
   color: #2196f3;
   text-decoration: underline;
 }
@@ -826,17 +826,7 @@ body {
   fill: rgb(255, 255, 255);
 }
 
-/* Стили для ПОРТФОЛИО */
-
-.portfolio-hidden {
-  display: none;
-}
-
 /* PORFOLIO */
-
-.portfolio-section {
-  padding: 94px 0;
-}
 
 /* фильтр */
 .filter {
@@ -844,11 +834,11 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
-.filter-item {
+.filter__item {
   margin: 0 4px;
 }
 
-.filter-button {
+.filter__btn {
   padding: 0;
   border: none;
   font: inherit;
@@ -874,8 +864,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
 
@@ -890,23 +880,23 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.portfolio-item {
+.portfolio__item {
   margin-top: 30px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.portfolio__item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio-cards {
+.portfolio__cards {
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   padding: 24px;
 }
-.portfolio-title {
+.portfolio__title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -914,17 +904,18 @@ body {
   font-weight: 700;
 }
 
-.portfolio-text {
+.portfolio__attribute {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
-.portfolio-hover-box-relative {
+
+.portfolio__hover-box {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-hover-box {
+.portfolio__hover {
   position: absolute;
   display: flex;
   align-items: center;
@@ -940,12 +931,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .portfolio-hover-box {
+.portfolio__item:hover .portfolio__hover {
   transform: translateY(0);
   opacity: 1;
 }
 
-.portfolio-hover-text {
+.portfolio__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
