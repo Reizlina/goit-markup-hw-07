@@ -18,33 +18,36 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-logo logo">
-            Web<span class="accent-header">Studio</span></a
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a href="./index.html" class="logo header__logo">
+            Web<span class="logo__black">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="site-nav-link current">
-              <a href="./index.html" class="header-link link current">Студия</a>
+          <ul class="header__menu">
+            <li class="header__menu-item current">
+              <a href="./index.html" class="header__menu-link link current">Студия</a>
             </li>
-            <li class="site-nav-link">
-              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            <li class="header__menu-item">
+              <a href="./portfolio.html" class="header__menu-link link">Портфолио</a>
             </li>
-            <li class="site-nav-link"><a href="" class="header-link link">Контакты</a></li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="socials-list">
-          <li class="socials-list-item">
-            <a href="mailto:info@devstudio.com" class="socials"
-              ><svg class="decor-icon-header">
+
+        <ul class="header__socials">
+          <li class="header__socials-item">
+            <a href="mailto:info@devstudio.com" class="header__socials-link">
+              <svg class="header__socials-icon">
                 <use href="./images/svg/mail-tel.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="socials-list-item no-margin">
-            <a href="tel:+38-096-111-11-11" class="socials">
-              <svg class="decor-icon-header">
+          <li class="header__socials-item no-margin">
+            <a href="tel:+38-096-111-11-11" class="header__socials-link">
+              <svg class="header__socials-icon">
                 <use href="./images/svg/mail-tel.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -58,23 +61,32 @@
     <main>
       <section class="hero">
         <div class="container">
+          <!-- hero__title -->
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <!-- btn  ставить ширину и высоту -->
           <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
       <!-- Преимущества -->
-
+      <!-- section -->
       <section class="feature-section">
+        <!-- Будет оборачивать и следующую секцию -->
         <div class="container">
           <!-- Заголовок будет скрыт -->
+          <!-- hidden -->
           <h2 class="feature-hidden">Наши преимущества</h2>
+          <!-- features -->
           <ul class="feature-list">
+            <!-- features__item -->
             <li class="feauture-list-item">
+              <!-- features__img -->
               <svg class="decor-image-feauture">
                 <use href="images/svg/benefits.svg#icon-antenna"></use>
               </svg>
+              <!-- features__title -->
               <h3 class="feature-title">Внимание к деталям</h3>
+              <!-- features__text -->
               <p class="feature-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
@@ -115,10 +127,15 @@
 
       <!-- Чем мы занимаемся -->
 
+      <!-- УДАЛЯЕМ ЭТО БУДЕТ ОДНА СЕКЦИЯ! -->
       <section class="busines-section">
+        <!-- УДАЛЯЕМ -->
         <div class="container">
+          <!-- section__title -->
           <h2 class="busines-title section-title">Чем мы занимаемся</h2>
+          <!-- busines__list -->
           <ul class="busines-list">
+            <!-- busines__item -->
             <li class="busines-item">
               <img
                 src="./images/box1.jpg"
@@ -126,6 +143,7 @@
                 width="370"
                 height="294"
               />
+              <!-- busines__text ДИВ УДАЛЯЕМ -->
               <div class="busines-text-box">
                 <p class="busines-text">Десктопные приложения</p>
               </div>
@@ -157,12 +175,16 @@
       </section>
 
       <!-- Наша команда -->
-
+      <!-- section -->
       <section class="team-section">
         <div class="container">
+          <!-- section__title -->
           <h2 class="team-title section-title">Наша команда</h2>
+          <!-- team__list -->
           <ul class="team-list">
+            <!-- team__item -->
             <li class="team-item">
+              <!-- team__img -->
               <img
                 class="team-img"
                 src="./images/img-1.jpg"
@@ -170,12 +192,19 @@
                 width="270"
                 height="260"
               />
+              <!-- description -->
               <div class="team-text-box">
+                <!-- description__names -->
                 <h3 class="team-names">Игорь Демьяненко</h3>
+                <!-- description__position -->
                 <p class="team-text">Product Designer</p>
+                <!-- socials -->
                 <ul class="decor-team-list">
+                  <!-- socials__item -->
                   <li class="decor-team-item">
+                    <!-- socials__link -->
                     <a class="team-link-icon" href="#">
+                      <!-- socials__icon -->
                       <svg class="decor-socials-team">
                         <use href="images/svg/socials.svg#icon-instagram"></use>
                       </svg>
@@ -339,12 +368,16 @@
       </section>
 
       <!-- Постоянные клиенты -->
-
+      <!-- section -->
       <section class="regular-custumers-section">
         <div class="container">
+          <!-- section__title -->
           <h2 class="team-title section-title">Постоянные клиенты</h2>
+          <!-- custumers -->
           <ul class="regular-custumers-list">
+            <!-- custumers__item -->
             <li class="regular-custumers-item">
+              <!-- custumers__icon -->
               <svg class="regular-custumers-icon">
                 <use href="images/svg/logo-partner-sprite.svg#icon-logo"></use>
               </svg>
@@ -381,15 +414,23 @@
     <!-- Подвал -->
 
     <footer class="footer">
+      <!-- footer__container container -->
       <div class="container">
+        <!-- удалю и позиционирование дам на клас футер__контейнер -->
         <div class="footer-decor-box">
+          <!-- footer__address -->
           <div class="first-footer-box">
+            <!-- a> logo -->
+            <!-- span> logo__white -->
             <a href="./index.html" class="logo logo-footer">
               Web<span class="accent-footer">Studio</span></a
             >
             <address>
+              <!-- address -->
               <ul class="footer-list">
+                <!-- address__item -->
                 <li class="footer-list-item">
+                  <!-- address__link -->
                   <a href="https://goo.gl/maps/qVXAVopkia2wuuTD7" class="address"
                     >г. Киев, пр-т Леси Украинки, 26
                   </a>
@@ -403,11 +444,17 @@
               </ul>
             </address>
           </div>
+          <!-- footer__socials -->
           <div class="footer-socials-box">
+            <!-- footer__title -->
             <p class="footer-title">Присоединяйтесь</p>
+            <!-- sicials -->
             <ul class="footer-decor-list">
+              <!-- socials__item -->
               <li class="footer-decor-item">
+                <!-- socials__link -->
                 <a class="footer-link-icon" href="#">
+                  <!-- socials__icon -->
                   <svg class="footer-decor-socials">
                     <use href="images/svg/socials.svg#icon-instagram"></use>
                   </svg>
@@ -436,11 +483,17 @@
               </li>
             </ul>
           </div>
+          <!-- footer__form -->
           <div class="footer-form-box">
+            <!-- footer__title -->
             <p class="footer-title">Подпишитесь на рассылку</p>
+            <!-- subscribe -->
             <div class="footer-form-and-btn-box">
+              <!-- subscribe__form -->
               <form class="footer-form" action="">
+                <!-- subscribe__label -->
                 <label class="footer-form-label" for="email"></label>
+                <!-- subscribe__input -->
                 <input
                   class="footer-form-input"
                   type="email"
@@ -449,8 +502,10 @@
                   placeholder="E-mail"
                 />
               </form>
+              <!-- btn subscribe__btn -->
               <button class="footer-btn" type="submit">
                 Подписаться
+                <!-- btn__icon -->
                 <svg class="footer-btn-icon">
                   <use href="./images/svg/socials.svg#icon-send"></use>
                 </svg>
@@ -465,15 +520,22 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!-- modal__close-cross -->
         <div class="modal-close-cross" data-modal-close></div>
-
+        <!-- form -->
         <form class="form" action="">
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <!-- form__title -->
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <!-- NAME -->
+          <!-- form__box -->
           <div class="contact-us-box">
+            <!-- form__lable -->
             <label class="contact-us-label" for="contact-us-name">Имя</label>
+            <!-- form__input -->
             <input class="contact-us-input" type="text" name="name" id="contact-us-name" />
+            <!-- form__wrap-->
             <span class="contact-us-icon-box">
+              <!-- form__svg -->
               <svg class="contact-us-icon">
                 <use href="./images/svg/modal-icon.svg#icon-person"></use>
               </svg>
@@ -502,6 +564,7 @@
           <!-- TEXT AREA -->
 
           <label class="contact-us-label" for="contact-us-textarea">Комментарий</label>
+          <!-- form__textarea -->
           <textarea
             class="contact-us-input-textarea"
             name="message"
@@ -512,21 +575,27 @@
 
           <!-- CHECKBOX -->
 
+          <!-- form__checkbox -->
           <label class="contact-us-checkbox-label" for="contact-us-checkbox">
+            <!-- form__checkbox-input -->
             <input
               class="contact-us-checkbox-item"
               type="checkbox"
               name="checbox"
               id="contact-us-checkbox"
             />
+            <!-- form__checkmark -->
             <span class="contact-us-checkbox-checkmark">
+              <!-- form__checkmark-icon -->
               <svg class="contact-us-checkbox-icon">
                 <use href="./images/svg/modal-icon.svg#icon-check"></use>
               </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю
+            <!-- form-link -->
             <a class="contact-us-checkbox-link" href="#">Условия договора</a>
           </label>
+          <!-- btn form__btn -->
           <button class="modal-btn" type="submit">Отправить</button>
         </form>
       </div>

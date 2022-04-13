@@ -29,24 +29,25 @@ body {
   padding: 25px 0;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-.header .container {
+.header__container {
   display: flex;
   justify-content: space-between;
 }
-.header-nav,
-.socials-list {
+.header__nav,
+.header__socials {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.site-nav {
+.header__menu {
   display: flex;
 }
-.site-nav-link,
-.socials-list-item {
+.header__menu-item,
+.header__socials-item {
   margin: 0 50px 0 0;
 }
+/* это должен быть ласт чайлд */
 .no-margin {
   margin: 0;
 }
@@ -57,13 +58,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.header-logo {
+
+.header__logo {
   margin-right: 93px;
 }
-.accent-header {
+.logo__black {
   color: #000000;
 }
-.site-nav .link {
+.header__menu .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -72,19 +74,19 @@ body {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header__menu .link:hover,
+.header__menu .link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.header__menu .link.current {
   color: var(--accent-color);
 }
-.site-nav,
-.socials-list {
+.header__menu,
+.header__socials {
   list-style: none;
 }
 
-.site-nav-link {
+.header__menu-item {
   position: relative;
 }
 
@@ -100,7 +102,7 @@ body {
   border-radius: 2px;
 }
 
-.socials {
+.header__socials-link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -110,14 +112,14 @@ body {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials:hover,
-.socials:focus {
+.header__socials-link:hover,
+.header__socials-link:focus {
   color: var(--accent-color);
 }
 
 /* ___SVG___ */
 
-.decor-icon-header {
+.header__socials-icon {
   max-height: 16px;
   max-width: 20px;
   margin-right: 10px;
@@ -126,8 +128,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials:hover .decor-icon-header,
-.socials:focus .decor-icon-header {
+.header__socials-link:hover .header__socials-icon,
+.header__socials-link:focus .header__socials-icon {
   fill: var(--accent-color);
 }
 

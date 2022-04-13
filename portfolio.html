@@ -19,33 +19,36 @@
     <!-- Шапка -->
 
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="./index.html" class="header-logo logo">
-            Web<span class="accent-header">Studio</span></a
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a href="./index.html" class="logo header__logo">
+            Web<span class="logo__black">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="site-nav-link">
-              <a href="./index.html" class="header-link link">Студия</a>
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="./index.html" class="header__menu-link link">Студия</a>
             </li>
-            <li class="site-nav-link current">
-              <a href="./portfolio.html" class="header-link link current">Портфолио</a>
+            <li class="header__menu-item current">
+              <a href="./portfolio.html" class="header__menu-link link current">Портфолио</a>
             </li>
-            <li class="site-nav-link"><a href="" class="header-link link">Контакты</a></li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link link">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="socials-list">
-          <li class="socials-list-item">
-            <a href="mailto:info@devstudio.com" class="socials"
-              ><svg class="decor-icon-header">
+
+        <ul class="header__socials">
+          <li class="header__socials-item">
+            <a href="mailto:info@devstudio.com" class="header__socials-link">
+              <svg class="header__socials-icon">
                 <use href="./images/svg/mail-tel.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="socials-list-item no-margin">
-            <a href="tel:+38-096-111-11-11" class="socials">
-              <svg class="decor-icon-header">
+          <li class="header__socials-item no-margin">
+            <a href="tel:+38-096-111-11-11" class="header__socials-link">
+              <svg class="header__socials-icon">
                 <use href="./images/svg/mail-tel.svg#icon-tel"></use>
               </svg>
               +38 096 111 11 11</a
@@ -58,14 +61,18 @@
     <!-- Портфолио -->
 
     <main>
+      <!-- section -->
       <section class="portfolio-section">
         <div class="container">
           <!-- Заголовок спрятан -->
+          <!-- hidden -->
           <h1 class="portfolio-hidden">Портфолио</h1>
 
           <!-- Фильтр -->
           <ul class="filter">
+            <!-- filter__item -->
             <li class="filter-item">
+              <!-- filter__btn -->
               <button type="button" class="filter-button">Все</button>
             </li>
             <li class="filter-item">
@@ -83,9 +90,11 @@
           </ul>
 
           <!-- Галерея -->
-
+          <!-- portfolio -->
           <ul class="portfolio">
+            <!-- portfolio__item -->
             <li class="portfolio-item">
+              <!-- portfolio__hover-box -->
               <div class="portfolio-hover-box-relative">
                 <img
                   src="./images/Portfolio/img-1.jpg"
@@ -93,7 +102,9 @@
                   width="370"
                   height="294"
                 />
+                <!-- portfolio__hover -->
                 <div class="portfolio-hover-box">
+                  <!-- portfolio__text -->
                   <p class="portfolio-hover-text">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -102,8 +113,11 @@
                 </div>
               </div>
 
+              <!-- portfolio__cards -->
               <div class="portfolio-cards">
+                <!-- portfolio__title -->
                 <h2 class="portfolio-title">Технокряк</h2>
+                <!-- portfolio__attribute -->
                 <p class="portfolio-text">Веб-сайт</p>
               </div>
             </li>
