@@ -869,12 +869,12 @@
 
 /* галерея */
 
-.portfolio {
+/* .portfolio {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.portfolio__item {
+} */
+/* .portfolio__item {
   margin-top: 30px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -939,4 +939,4 @@
   color: var(--primary-bg-color);
 
   padding: 0 24px;
-}
+} */

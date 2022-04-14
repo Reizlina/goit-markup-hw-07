@@ -15,13 +15,11 @@
   &__menu {
     display: flex;
   }
-  &__menu-item,
-  &__socials-item {
+  &__menu-item:not(:last-child),
+  &__socials-item:not(:last-child) {
     margin: 0 50px 0 0;
   }
-  &__logo {
-    margin-right: 93px;
-  }
+
   &__menu-link {
     color: $title-text-color;
     font-weight: 500;
